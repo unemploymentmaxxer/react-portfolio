@@ -1,0 +1,17 @@
+{
+    "portfolio": "Portfolio",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "language": "Language",
+    "theme": "Theme",
+    "intro": "Hi, I'm ",
+    "about-info": "I'm a frontend developer focused on building modern, responsive, and user-friendly web applications. I work mainly with JavaScript and React, paying close attention component-based architecture and usability. I am constantly improving my skills and enjoy learning new technologies that help me create better experiences.",
+    "about-degrees": "I'm currently studying web development, with a strong focus on frontend technologies. During my studies, I have gained practical experience in HTML, CSS/SCSS, JavaScript, React, Git and Redux. This background allows me to combine theoretical knowledge with real-world development practices.",
+    "no-description": "No description",
+    "rating": "Rating",
+    "languages": "Languages",
+    "email": "Email",
+    "all-rights-reserved": "All rights reserved"
+}
