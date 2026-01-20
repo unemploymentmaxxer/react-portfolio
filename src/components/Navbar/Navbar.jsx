@@ -10,7 +10,8 @@ const Navbar = () => {
   const { t, i18n } = useTranslation()
 
   const changeLanguage = () => {
-    const newLng = i18n.language == 'ru' ? 'en' : 'ru'
+    const current = (i18n.resolvedLanguage || i18n.language).split('-')[0]
+    const newLng = current == 'ru' ? 'en' : 'ru'
     i18n.changeLanguage(newLng)
   }
  
@@ -26,7 +27,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="nav__options">
-          <button className="nav__options-language" onClick={() => changeLanguage()}>{t('language')}: {i18n.language == 'ru' ? 'RU' : 'EN'}</button>
+          <button className="nav__options-language" onClick={() => changeLanguage()}>{t('language')}: {(i18n.resolvedLanguage || i18n.language).split('-')[0] == 'ru' ? 'RU' : 'EN'}</button>
           <button className="nav__options-theme" onClick={() => dispatch(toggleTheme())}>{t('theme')}</button>
         </div>
       </nav>

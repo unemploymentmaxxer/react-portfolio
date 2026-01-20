@@ -23,5 +23,9 @@ i18n
     detection:{
         order: ['localStorage', 'navigator', 'htmlTag'],
         caches: ['localStorage']
-    }
+    },
+    supportedLngs: ['en', 'ru'],
+    nonExplicitSupportedLngs: true,
+    load: 'languageOnly',
+
 })
