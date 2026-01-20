@@ -4,9 +4,12 @@ import { useTranslation } from 'react-i18next'
 const ProjectCard = ({ project }) => {
 
   const { t } = useTranslation()
+  const imgUrl = `https://opengraph.githubassets.com/1/${project.owner.login}/${project.name}`
+  const placeholder = '/placeholder.png'
 
   return (
     <div className="project__card">
+      <img src={imgUrl} alt="" className="project__card-img" onError={(e) => {e.currentTarget.src = placeholder}}/>
       <h2 className="project__card-title">{project.name}</h2>
       <p className="project__card-description">
         {project.description || `${t('no-description')}`}
